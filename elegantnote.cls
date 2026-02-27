@@ -1,10 +1,9 @@
-% Author: Dongsheng Deng
-% Homepage: https://ddswhu.me/
-% Email: elegantlatex2e@gmail.com
+% Author: Dongsheng Deng & Ran Wang
+% Email: ranwang.osbert@outlook.com
 % Lastest Version: https://github.com/ElegantLaTeX/ElegantNote
 
 % --- Class structure: identification part
-\ProvidesClass{elegantnote}[2022/12/31 ElegantNote v2.50 class]
+\ProvidesClass{elegantnote}[2026/2/27 ElegantNote v2.60 class]
 \NeedsTeXFormat{LaTeX2e}
 
 
