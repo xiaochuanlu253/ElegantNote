@@ -67,17 +67,17 @@ function typeset(file, dir, exe)
   return run(dir, cmd .. file)
 end
 
--- Copy cls and image subdirectory into the typeset build dir
+-- Copy required files into the typeset build dir
 function docinit_hook()
-  -- Copy .cls
+  -- Copy .cls, .bib support files
   for _, glob in pairs(typesetsuppfiles) do
     cp(glob, currentdir, typesetdir)
   end
-  -- Copy image/
+  -- Copy image subdirectory
   local dest = typesetdir .. "/" .. imagesuppdir
   mkdir(dest)
   cp("*", imagesuppdir, dest)
-  -- Copy .tex
+  -- Copy tex source files
   for _, texfile in pairs(typesetfiles) do
     cp(texfile, currentdir, typesetdir)
   end
